@@ -16,11 +16,12 @@ $dynamodb = $sdk->createDynamoDb();
 $marshaler = new Marshaler();
 
 $tableName = 'RawData';
-$htmlInput = "<html>Hello World!</html>";
+$htmlInput = "<html>Hello World! hahaha</html>";
+$id = 3;
 
 $json = json_encode([
     'html' => $htmlInput,
-    'id' => 2
+    'id' => $id
 ]);
 
 $params = [
